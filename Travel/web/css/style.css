@@ -1,0 +1,154 @@
+/*
+@author : hallakhor;
+date : 2018-12-9
+ */
+
+/*
+font-family: 'Lato', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+ */
+body{
+	background: #ffffff;
+}
+
+h1,h2,h3,h4,h5,h6,ul,ol,li,table,tr,td,th,p,img,form,textarea{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border: none;
+	outline: none;
+}
+
+#top-header{
+	background-color: #006738;
+	height: 50px;
+}
+
+#top-header ul li{
+	display: inline-block;
+	color:#fefefe;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	padding: 10px;
+	font-size: 14px;
+
+}
+
+#top-header ul.social{
+	padding-top: 5px;
+}
+#top-header ul.social li{
+	float: left;
+	color:#fefefe;
+	padding: 10px 15px;
+	font-size: 14px;
+	margin-left: 20px;
+}
+
+.facebook{
+	background-color: #3b5998;
+}
+
+.google{
+	background-color: #ea4335;
+}
+
+.twitter{
+	background-color: #1da1f2;
+}
+
+.youtube{
+	background-color: #ff0000;
+}
+
+.fa-phone {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+/* start of bottom header */
+#bottom-header{
+	background-color: #ffffff;
+	height: 100px;
+}
+
+#bottom-header form{
+	margin-top: 30px;
+}
+
+#bottom-header form input{
+	border:2px solid #006738;
+	margin-left: 40px;
+}
+
+#bottom-header form button{
+	background-color: #006738;
+	color: #ffffff;
+	border: none;
+}
+
+nav {
+	height: 50px;
+	background-image: url('../images/menu_background.png');
+	background-repeat: repeat-x;
+}
+
+nav ul li a {
+	color: #006738;
+}
+
+nav ul li.nav-item.active{
+	background-color: #006738;
+	
+}
+
+nav ul li.nav-item.active a{
+	color: #ffffff;
+	
+}
+
+nav ul li.nav-item:hover{
+	background-color: #006738;
+	color: #ffffff;
+	
+}
+nav ul li.nav-item a:hover{
+	background-color: #006738;
+	color: #ffffff;
+	
+}
+.clear{
+	clear: both;
+}
+
+/* slider */
+
+#slider-about{
+	height: 500px;
+	background-color: #ffffff;
+	margin-top: 10px;
+}
+
+/* about */
+#about {
+	height: 500px;
+	background-color: #bdc2c0;
+	
+	
+}
+
+#about h5{
+	margin-top: 20px;
+	text-transform: uppercase;
+	text-align: center;
+
+}
+#about p{
+	margin-top: 5px;
+	text-align: justify;
+	
+}
+

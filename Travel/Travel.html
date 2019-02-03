@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Travel</title>
+	<link rel="stylesheet" type="text/css" href="travel.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body class="body">
+	<header>
+		<nav class="nav">
+			<img class="img1" src="images/travel2.jpg" style="margin-left: 10px;">
+			<div class="search-box">
+				<i style="color: white; margin-left: 20px; margin-top: 5px;" class="fas fa-search"></i>
+				<input class="search-txt" type="text" name="" placeholder="Type to Search" >
+			</div>
+		</nav>
+	</header>
+	<div class="imageContainer">
+		<img src="images/travel1.jpg" style="width: 100%; height: 800px;">
+		<div class = "tab">
+			<nav class="nav1">
+				<ul>
+					<li class="tablinks" onclick="openCity(event, 'flight')"><i class="fas fa-plane" style="padding-right: 8px;"></i>Flight</li>&nbsp;&nbsp;&nbsp;
+	  				<li class="tablinks" onclick="openCity(event, 'hotel')"><i class="fas fa-bed" style="padding-right: 8px;"></i>Hotel</li>&nbsp;&nbsp;&nbsp;
+	  				<li class="tablinks" onclick="openCity(event, 'rental')"><i class="fas fa-car" style="padding-right:8px; "></i>Rental</li>
+				</ul>
+			</nav>
+			<div id="flight" class="demo">
+		  		<p style="padding: 20px; font-family: arial; font-size: 20px;">Travel The World With Us</p>
+		  		<div style="width: 200px; height: 60px; padding-left:20px; float: left;">
+		  			<label>From</label>
+		  			<input style="display: inline; padding: 10px; width: 100%;" type="text" placeholder="Departing from">
+		  		</div>
+
+		  		<div style="width: 200px; height: 60px; padding-left: 20px; float: left; margin-left: 20px;">
+		  			<label>To</label>
+		  			<input style="display: block; padding: 10px; width: 100%;" type="text" placeholder="Arriving at">
+		  		</div>
+		  		<p style="padding-left: 20px; padding-top: 20px; margin-top: 60px; ">
+		  			<button type="button" style="padding: 8px; color: white; background: darkgray;">Search and find dates</button>
+		  		</p>
+			</div>
+
+			<div id="hotel" class="tabcontent">
+			  <p style="padding:20px; font-family: arial; font-size: 20px;">Find the best hotels</p>
+			  <p style="padding-left: 20px; padding-top: 15px; ">Book a hotel with us and get the best fares and promotions.</p>
+			  <p style="padding-left: 20px; padding-top: 15px;">We know hotels - we know comfort.</p>
+			  <p style="padding-left: 20px; margin-top: 15px;">
+			  	<button type="button" style="padding: 8px; color: white; background: darkgray;">Search hotels</button>
+			  </p>
+			</div>
+
+			<div id="rental" class="tabcontent">
+			  <p style="padding: 20px; font-family: arial; font-size: 20px;">Best car rental in the World!</p>
+			    <p style="padding-left: 20px;">
+			  	<span style="color:white; background:darkorange; ">Discount!</span>
+			  	Special offer if you book today: 25% off anywhere in the world.
+			    </p>
+			    <div style="width: 450px; height: 40px; padding: 20px; float: left;">
+		  			<input style="display: inline; padding: 10px; width: 100%;" type="text" placeholder="Pickup Point">
+		  	    </div>
+		  	    <p style="padding-left: 20px;">
+		  	    	<button type="button" style="padding: 8px; color: white; background: darkgray;">Search Availability</button>
+		  	    </p>
+
+			</div>
+		</div>
+	</div>
+	<script>
+		function openCity(evt, cityName) {
+		  var i, tabcontent, tablinks, dem;
+		  document.getElementById("flight").classList.add('tabcontent');
+
+		  document.getElementById("flight").classList.remove('demo');
+
+		  tabcontent = document.getElementsByClassName("tabcontent");
+		  for (i = 0; i < tabcontent.length; i++) {
+		    tabcontent[i].style.display = "none";
+		  }
+		  tablinks = document.getElementsByClassName("tablinks");
+		  for (i = 0; i < tablinks.length; i++) {
+		    tablinks[i].className = tablinks[i].className.replace(" active", "");
+		  }
+		  document.getElementById(cityName).style.display = "block";
+		  evt.currentTarget.className += " active";
+		}
+	</script>
+
+<div style="color: #F9F9F9">
+	<div style="background: #F9F9F9">
+	<h2 class="h2" >
+		OUR SERVICES
+	</h2>
+	</div>
+	<div style="background: #F9F9F9">
+	<p style="text-align: center; font-size: 20px; font-weight: 300; font-family: sans-serif;  color: #393131; padding-bottom: 20px;">We provide luxurious services with comfort.
+	</p>
+	</div>
+	<div class="row">
+		<div class="col">
+			<div class="services">
+				<div class="icon">
+					<i class="fas fa-bed" style="color: white; padding-left: 27px; padding-top: 25px;"></i>
+				</div>
+				<h4 style="margin-left: 70px; margin-top: 10px; font-family: arial; color: #393131">Hotel Booking</h4>
+				<p style="font-family: arial; margin-top: 5px; padding: 5px; color: #6B605D">Hotel Booking is available from all over the world at anytime with required facility.</p>
+			</div>
+		</div>
+		<div class="col">
+			<div class="services">
+				<div class="icon">
+					<i class="fas fa-plane" style="color: white; padding-left: 27px; padding-top: 25px;"></i>
+				</div>
+				<h4 style="font-family: arial; margin-left: 70px; margin-top: 10px; color: #393131">Flight Booking</h4>
+				<p style="font-family: arial; margin-top: 5px; padding: 5px; color: #6B605D">Flight Booking is also available all over the world.</p>
+			</div>
+		</div>
+		<div class="col">
+			<div class="services">
+				<div class="icon">
+					<i class="fas fa-ticket-alt" style="color: white; padding-left: 27px; padding-top: 25px;"></i>
+				</div>
+				<h4 style="font-family: arial; margin-left: 70px; margin-top: 10px; color: #393131">Ticket Booking</h4>
+				<p style="font-family: arial; margin-top: 5px; padding: 5px; color: #6B605D">Ticket Booking is only available a week before travel.</p>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col">
+			<div class="services">
+				<div class="icon">
+					<i class="fas fa-train" style="color: white; padding-left: 27px; padding-top: 25px;"></i>
+				</div>
+				<h4 style="margin-left: 70px; margin-top: 10px; font-family: arial; color: #393131">Train Booking</h4>
+				<p style="font-family: arial; margin-top: 5px; padding: 5px; color: #6B605D">Train Booking is available only in nearby places of this country.</p>
+			</div>
+		</div>
+		<div class="col">
+			<div class="services">
+				<div class="icon">
+					<i class="fas fa-home" style="color: white; padding-left: 27px; padding-top: 25px;"></i>
+				</div>
+				<h4 style="font-family: arial; margin-left: 70px; margin-top: 10px; color: #393131">Amazing Tour</h4>
+				<p style="font-family: arial; margin-top: 5px; padding: 5px; color: #6B605D">This is a special offer booking opens only one day before travelling.</p>
+			</div>
+		</div>
+		<div class="col">
+			<div class="services">
+				<div class="icon">
+					<i class="fas fa-ship" style="color: white; padding-left: 26px; padding-top: 25px;"></i>
+				</div>
+				<h4 style="font-family: arial; margin-left: 70px; margin-top: 10px; color: #393131">Cruises Booking</h4>
+				<p style="font-family: arial; margin-top: 5px; padding: 5px; color: #6B605D">Cruises booking can only be available for a week long vacation.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+	<h3 class="h3" style="margin-top: 40px;">
+		Good Offers Right Now!
+	</h3>
+	<p style="margin-left: 150px; padding: 10px;">
+		Up To 50% discount.
+	</p>
+	
+	<div class="container" style="float: left; ">
+		<div class="gallery">
+			<img src="images/cinque.jpg" style="width: 550px; height: 400px;">
+				<div class="desc">Cinque Terra</div>
+		</div>
+	</div>
+	<div class="container" style="float: left;margin-left: 20px;">
+		<div class="gallery">
+			<img src="images/newyork.jpg" style="width: 550px; height: 400px;">
+				<div class="desc">New York</div>
+		</div>
+	</div>
+	<div class="container" style="float: left; margin-top: 20px;">
+		<div class="gallery">
+			<img src="images/greatwall.jpeg" style="width: 550px; height: 400px;">
+				<div class="desc">Great Wall of China</div>
+		</div>
+	</div>
+	<div class="container" style="float: left; margin-left: 20px; margin-top: 20px;">
+		<div class="gallery">
+			<img src="images/pisa.jpg" style="width: 550px; height: 400px;">
+				<div class="desc">Leaning Tower of Pisa</div>
+		</div>
+	</div>
+	<div class="container" style="float: left; margin-top: 20px;">
+		<div class="gallery">
+			<img src="images/tajmahal.jpg" style="width: 550px; height: 400px;">
+				<div class="desc">Taj Mahal</div>
+		</div>
+	</div>
+	<div class="container" style=" margin-left: 720px; margin-top: 940px;">
+		<div class="gallery">
+			<img src="images/colossium.jpg" style="width: 550px; height: 400px;">
+				<div class="desc">Colossium</div>
+		</div>
+	</div>
+
+<div style="background:#F9F9F9 ">	
+	<h3 style="margin-top: 40px;">Explore Nature</h3>
+	<p style="margin-left: 150px; padding: 10px;">Travel with us and see nature at its finest.</p>
+<div>
+	<div class="container1" style="float: left;">
+		<div class="gallery" style="background: #F9F9F9;">
+			<img src="images/everest.jpg" style="width: 550px; height: 400px;">
+			<p style="font-size: 25px; padding: 15px; font-family: arial;">Mount Everest, Nepal</p>
+			<p style="padding-left: 15px; font-family: sans-serif;">Overall trip cost $50,000 per person.</p>
+			<p style="margin-left: 15px; margin-top: 15px;">
+				<button type="button" style="padding:9px; background: white;">Buy Tickets</button>
+			</p>
+		</div>
+		
+	</div>
+	<div class="container1" style="float: left; margin-left: 20px; background: #F9F9F9">
+		<div class="gallery">
+			<img src="images/victoria.jpg" style="width: 550px; height: 400px;">
+			<p style="font-size: 25px; font-family: arial; padding: 15px;">Victoria Fall, Zimbabwe</p>
+			<p style="padding-left: 15px; font-family: sans-serif;">Overall trip of 4 days and 3 nights cost $10,000.</p>
+			<p style="margin-left: 15px; margin-top: 15px;">
+				<button type="button" style="padding:9px; background: white;">Buy Tickets</button>
+			</p>
+		</div>
+	</div>
+	<div class="container1" style="float: left; margin-top: 20px;">
+		<div class="gallery">
+			<img src="images/egypt.jpg" style="width: 550px; height: 400px;">
+			<p style="font-size: 25px; font-family: arial; padding: 15px;">Pyramid of Egypt</p>
+			<p style="padding-left: 15px; font-family: sans-serif;">All Egypt tour for 1 week package only at $20,000.</p>
+			<p style="margin-left: 15px; margin-top: 15px;">
+				<button type="button" style="padding:9px; background: white;">Buy Tickets</button>
+			</p>
+		</div>
+	</div>
+	<div class="container1" style="float: left; margin-top: 20px; margin-left: 20px;">
+		<div class="gallery">
+			<img src="images/hawaii.jpg" style="width: 550px; height: 400px;">
+			<p style="font-size: 25px; font-family: arial; padding: 15px;">Hawaii, United Kingdom</p>
+			<p style="padding-left: 15px; font-family: sans-serif;">1 week Hawaii luxury nature tour only for $25,000 per person.</p>
+			<p style="margin-left: 15px; margin-top: 15px;">
+				<button type="button" style="padding:9px; background: white;">Buy Tickets</button>
+			</p>
+		</div>
+	</div>
+</div>
+<div style="background: lightgray;">
+	<div class="container2">
+		<p style="color: white; padding: 20px; font-family: arial; font-size: 25px;">Get the best offers first!</p>
+		<p style="color: white; padding-left: 20px; padding-top: 8px; font-family: sans-serif; font-size: 16px;">Join our newsletter.</p>
+		<p style="color: white; padding-top: 15px; padding-left: 20px; font-family: sans-serif;">Email</p>
+		<div style="width: 1050px; height: 60px; padding-left:20px; padding-top: 10px; float: left;">
+		  	<input style="display: inline; padding: 10px; width: 100%;" type="text" placeholder="Your Email Address">
+		</div>
+		<button type="submit" style="margin-left: 20px; height: 40px; background: red; color: white; padding: 10px; ">Subscribe</button>
+	</div>
+	<p style="margin-left: 150px; margin-top: 30px; font-family: arial; font-size: 25px;">Contacts</p>
+	<p style="margin-left: 150px; margin-top: 15px; font-family: sans-serif; font-size:15px; ">Let us book your next trip!</p>
+	<p style="font-family: sans-serif; font-size: 14px;">
+	<i class="fas fa-map-marker-alt" style="margin-left: 150px; margin-top: 15px; padding-right: 15px;"></i>
+	Bhaktapur, NEPAL
+	</p>
+	<p style="font-family: sans-serif; font-size: 14px;">
+	<i class="fas fa-phone-volume" style="margin-left: 150px; margin-top: 15px; padding-right: 12px;"></i>
+	Phone: 9860073315
+	</p>
+	<p style="font-family: sans-serif; font-size: 14px;">
+	<i class="fas fa-envelope" style="margin-left: 150px; margin-top: 15px; padding-right: 12px;"></i>
+	Email: rupeshbhasima@gmail.com
+	</p>
+	<div style="width: 1100px; height: 60px; margin-left: 150px; margin-top: 15px;">
+		  	<input style="display: inline; padding: 10px; width: 100%; height: 30px;" type="text" placeholder="Name">
+	</div>
+	<div style="width: 1100px; height: 60px; margin-left: 150px; margin-top: 8px;">
+		  	<input style="display: inline; padding: 10px; width: 100%; height: 30px;" type="text" placeholder="Email">
+	</div>
+	<div style="width: 1100px; height: 60px; margin-left: 150px; margin-top: 8px;">
+		  	<input style="display: inline; padding: 10px; width: 100%; height: 30px;" type="text" placeholder="Message">
+	</div>
+	<button type="submit" style="margin-left: 150px; height: 50px; background: black; color: white; padding: 15px; ">SEND MESSAGE</button>
+	<p style="margin-left: 630px; margin-top: 30px; font-family: verdana; font-size: 20px;">Find Us On</p>
+	<p>
+		<i class="fab fa-facebook" style="margin-left:600px; margin-top: 20px; float: left; "></i>
+	</p>
+	<p>
+		<i class="fab fa-instagram" style="margin-left: 10px; margin-top: 20px; float: left;"></i>
+	</p>
+	<p>
+		<i class="fab fa-twitter" style="margin-left: 10px; margin-top: 20px; float: left;"></i>
+	</p>
+	<p>
+		<i class="fab fa-youtube" style="margin-left: 10px; margin-top: 20px; float: left;"></i>
+	</p>
+	<p>
+		<i class="fab fa-snapchat-ghost" style="margin-left: 10px; margin-top: 20px; float: left;"></i>
+	</p>
+	<p>
+		<i class="fab fa-pinterest-p" style="margin-left: 10px; margin-top: 20px; float: left;"></i>
+	</p>
+	<p>
+		<i class="fab fa-linkedin-in" style="margin-left: 10px; margin-top: 20px;"></i>
+	</p>
+	<p style="margin-left: 570px; margin-top: 25px; padding-bottom:  20px; font-family: arial;">
+		Thank You For Visiting Our Page!!
+	</p>
+</div>
+</body>
+</html>
